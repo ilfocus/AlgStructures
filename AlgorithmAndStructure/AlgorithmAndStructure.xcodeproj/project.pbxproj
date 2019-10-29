@@ -13,6 +13,7 @@
 		3092BEFE23585DA30034A24C /* YCArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092BEFD23585DA30034A24C /* YCArrayList.m */; };
 		3092BF0123586FA50034A24C /* YCTestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092BF0023586FA50034A24C /* YCTestObj.m */; };
 		30E3BA9D2350810400DFE205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3BA9C2350810400DFE205 /* main.m */; };
+		95917F1123682260006ABD7B /* YCBothListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95917F1023682260006ABD7B /* YCBothListNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		3092BF0023586FA50034A24C /* YCTestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTestObj.m; sourceTree = "<group>"; };
 		30E3BA992350810400DFE205 /* AlgorithmAndStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmAndStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E3BA9C2350810400DFE205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95917F0F23682260006ABD7B /* YCBothListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBothListNode.h; sourceTree = "<group>"; };
+		95917F1023682260006ABD7B /* YCBothListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBothListNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 		30E3BA9B2350810400DFE205 /* AlgorithmAndStructure */ = {
 			isa = PBXGroup;
 			children = (
+				95917F0E2368221A006ABD7B /* 双向链表 */,
 				308D8F03235994F700A37C23 /* 单向链表 */,
 				3092BEFB23585C970034A24C /* 动态数组 */,
 				3092BEF7235857970034A24C /* 复杂度 */,
@@ -117,6 +121,15 @@
 				3092BF0023586FA50034A24C /* YCTestObj.m */,
 			);
 			path = AlgorithmAndStructure;
+			sourceTree = "<group>";
+		};
+		95917F0E2368221A006ABD7B /* 双向链表 */ = {
+			isa = PBXGroup;
+			children = (
+				95917F0F23682260006ABD7B /* YCBothListNode.h */,
+				95917F1023682260006ABD7B /* YCBothListNode.m */,
+			);
+			path = "双向链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +192,7 @@
 			files = (
 				3092BEFA235857CB0034A24C /* CWFibObject.m in Sources */,
 				3089631D23515DC1002802F2 /* CWTimeTool.m in Sources */,
+				95917F1123682260006ABD7B /* YCBothListNode.m in Sources */,
 				3092BF0123586FA50034A24C /* YCTestObj.m in Sources */,
 				308D8F062359951500A37C23 /* YCListNode.m in Sources */,
 				30E3BA9D2350810400DFE205 /* main.m in Sources */,

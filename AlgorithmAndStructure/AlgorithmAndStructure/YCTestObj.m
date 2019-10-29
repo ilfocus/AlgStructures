@@ -10,11 +10,13 @@
 #import "CWTimeTool.h"
 #import "CWFibObject.h"
 #import "YCListNode.h"
+#import "YCBothListNode.h"
 
 @implementation YCTestObj
 - (void)runTest {
 //	[self complexity];
-	[self singlyLinkedListTest];
+//	[self singlyLinkedListTest];
+	[self bothLinkedListTest];
 }
 #pragma mark - 复杂度
 - (void)complexity {
@@ -57,5 +59,24 @@
 	NSLog(@"ListNode1:%@",[node description]);
 	YCListNode *reverseNode = [node reverseListNode:node];
 	NSLog(@"ListNode2:%@",[reverseNode description]);
+}
+#pragma mark - 双向链表
+- (void)bothLinkedListTest {
+	YCBothListNode *node = [[YCBothListNode alloc] init];
+	for (int i = 0; i < 6; i ++) {
+		[node cw_addE:[NSString stringWithFormat:@"%d",i]];
+	}
+		// 0、1、2、3、4、5、6
+	[node cw_addE:@"6"];
+	NSLog(@"%@",node);
+		// 0、1、2、8、3、4、5、6
+	[node cw_addE:@"8" index:2];
+	NSLog(@"%@",node);
+		// 10、0、1、2、8、3、4、5、6
+	[node cw_addE:@"10" index:0];
+	NSLog(@"%@",node);
+		// 10、0、1、2、8、3、4、5、6、20
+	[node cw_addE:@"20" index:9];
+	NSLog(@"%@",node);
 }
 @end
