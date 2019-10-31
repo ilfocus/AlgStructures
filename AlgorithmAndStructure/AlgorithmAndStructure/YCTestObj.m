@@ -11,12 +11,14 @@
 #import "CWFibObject.h"
 #import "YCListNode.h"
 #import "YCBothListNode.h"
+#import "YCSort.h"
 
 @implementation YCTestObj
 - (void)runTest {
 //	[self complexity];
 //	[self singlyLinkedListTest];
-	[self bothLinkedListTest];
+//	[self bothLinkedListTest];
+	[self sort];
 }
 #pragma mark - 复杂度
 - (void)complexity {
@@ -78,5 +80,13 @@
 		// 10、0、1、2、8、3、4、5、6、20
 	[node cw_addE:@"20" index:9];
 	NSLog(@"%@",node);
+}
+#pragma mark - 算法
+#pragma mark - 排序算法
+- (void)sort {
+	NSArray *array = @[@(10),@(9),@(56),@(19),@(28),@(37),@(34)];
+	[YCSort bubbleSort:array];
+	[YCSort selectSort:array];
+	[YCSort insertSort:array];
 }
 @end

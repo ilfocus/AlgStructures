@@ -37,5 +37,13 @@
         NSLog(@"\n       [开始:%@]\n       [结束:%@]\n       [耗时:%.2fs]\n",tempS,tempE,consume/10000);
     }
 }
+// 2、判断是否为降序数组
+//+ (BOOL)isDescOrderArray:(NSArray *)array {
+//	BOOL desc = YES;
+//	for (int i = 0; i < array.count; i++) {
+//
+//	}
+//}
+// 3、判断是否为正序数组
 
 @end
