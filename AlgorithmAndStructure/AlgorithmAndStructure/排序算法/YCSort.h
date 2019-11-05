@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)bubbleSort:(NSArray *)array;
 + (void)selectSort:(NSArray *)array;
 + (void)insertSort:(NSArray *)array;
++ (void)quickSort:(NSMutableArray *)m low:(int)low high:(int)high;
 @end
 
 NS_ASSUME_NONNULL_END

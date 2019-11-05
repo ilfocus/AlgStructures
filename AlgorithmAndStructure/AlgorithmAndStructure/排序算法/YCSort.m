@@ -14,7 +14,7 @@
 	 插入排序
 	 冒泡排序
  排序之高效排序算法
-	 梳排序
+	 桶排序
 	 希尔排序
 	 快速排序
 	 堆排序
@@ -78,5 +78,33 @@
 	}
 	NSLog(@"插入排序后的数组值：%@",tempArray);
 }
+#pragma mark - 希尔排序
+#pragma mark - 快速排序
++ (void)quickSort:(NSMutableArray *)m low:(int)low high:(int)high {
+	if (low >= high) {
+		return;
+	}
+	int i = low;
+	int j = high;
+	id key = m[i];
+	while (i < j) {
+		while (i < j && [m[j] intValue] >= [key intValue]) {
+			j--;
+		}
+		if (i == j) { // 当key是目前最小时，会出现i==j的情况
+			break;
+		}
+		m[i++] = m[j];
+		while (i < j && [m[i] intValue] <= [key intValue]) {
+			i++;
+		}
+		if (i == j) break; // 当key是目前最大的数时(m[j]的前面)，会出现i=j的情况
+		m[j--] = m[i];
+	}
+	m[i] = key;
+	[self quickSort:m low:low high:i - 1];
+	[self quickSort:m low:i + 1 high:high];
+	NSLog(@"快速排序后的数组值：%@",m);
+}
 @end
-	
+

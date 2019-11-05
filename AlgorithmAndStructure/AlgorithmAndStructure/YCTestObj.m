@@ -88,5 +88,7 @@
 	[YCSort bubbleSort:array];
 	[YCSort selectSort:array];
 	[YCSort insertSort:array];
+	[YCSort quickSort:array.mutableCopy low:0 high:(int)array.count - 1];
 }
 @end
+		
