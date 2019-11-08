@@ -12,6 +12,7 @@
 #import "YCListNode.h"
 #import "YCBothListNode.h"
 #import "YCSort.h"
+#include "sort.h"
 
 @implementation YCTestObj
 - (void)runTest {
@@ -89,6 +90,14 @@
 	[YCSort selectSort:array];
 	[YCSort insertSort:array];
 	[YCSort quickSort:array.mutableCopy low:0 high:(int)array.count - 1];
+
+	int a[7] = {10,9,56,19,28,37,34};
+//	quick_sort(a, 0, 6);
+//	for (int i = 0; i < 7; ++i) {
+//			printf("%d,", a[i]);
+//	}
+//	printf("\n");
+	heapSortTest();
 }
 @end
 		

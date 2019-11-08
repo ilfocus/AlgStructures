@@ -14,6 +14,7 @@
 		3092BF0123586FA50034A24C /* YCTestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092BF0023586FA50034A24C /* YCTestObj.m */; };
 		30E3BA9D2350810400DFE205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3BA9C2350810400DFE205 /* main.m */; };
 		954D0A3123696C7600876EB8 /* YCSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 954D0A3023696C7600876EB8 /* YCSort.m */; };
+		9552CBE8237437BB00F57547 /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 9552CBE7237437BB00F57547 /* sort.c */; };
 		95917F1123682260006ABD7B /* YCBothListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95917F1023682260006ABD7B /* YCBothListNode.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		30E3BA9C2350810400DFE205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		954D0A2F23696C7600876EB8 /* YCSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSort.h; sourceTree = "<group>"; };
 		954D0A3023696C7600876EB8 /* YCSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSort.m; sourceTree = "<group>"; };
+		9552CBE6237437BB00F57547 /* sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
+		9552CBE7237437BB00F57547 /* sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sort.c; sourceTree = "<group>"; };
 		95917F0F23682260006ABD7B /* YCBothListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBothListNode.h; sourceTree = "<group>"; };
 		95917F1023682260006ABD7B /* YCBothListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBothListNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				954D0A2E23696C2300876EB8 /* 排序算法 */,
+				95917F0E2368221A006ABD7B /* 双向链表 */,
 				308D8F03235994F700A37C23 /* 单向链表 */,
 				3092BEFB23585C970034A24C /* 动态数组 */,
 				3092BEF7235857970034A24C /* 复杂度 */,
@@ -129,9 +133,10 @@
 		954D0A2E23696C2300876EB8 /* 排序算法 */ = {
 			isa = PBXGroup;
 			children = (
+				9552CBE6237437BB00F57547 /* sort.h */,
+				9552CBE7237437BB00F57547 /* sort.c */,
 				954D0A2F23696C7600876EB8 /* YCSort.h */,
 				954D0A3023696C7600876EB8 /* YCSort.m */,
-				95917F0E2368221A006ABD7B /* 双向链表 */,
 			);
 			path = "排序算法";
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9552CBE8237437BB00F57547 /* sort.c in Sources */,
 				3092BEFA235857CB0034A24C /* CWFibObject.m in Sources */,
 				3089631D23515DC1002802F2 /* CWTimeTool.m in Sources */,
 				95917F1123682260006ABD7B /* YCBothListNode.m in Sources */,
