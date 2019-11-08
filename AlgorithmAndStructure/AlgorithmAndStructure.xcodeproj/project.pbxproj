@@ -13,6 +13,7 @@
 		3092BEFE23585DA30034A24C /* YCArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092BEFD23585DA30034A24C /* YCArrayList.m */; };
 		3092BF0123586FA50034A24C /* YCTestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092BF0023586FA50034A24C /* YCTestObj.m */; };
 		30E3BA9D2350810400DFE205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3BA9C2350810400DFE205 /* main.m */; };
+		9535B80023756C93006FDB54 /* YCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9535B7FF23756C93006FDB54 /* YCQueue.m */; };
 		954D0A3123696C7600876EB8 /* YCSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 954D0A3023696C7600876EB8 /* YCSort.m */; };
 		9552CBE8237437BB00F57547 /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 9552CBE7237437BB00F57547 /* sort.c */; };
 		95917F1123682260006ABD7B /* YCBothListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95917F1023682260006ABD7B /* YCBothListNode.m */; };
@@ -43,6 +44,8 @@
 		3092BF0023586FA50034A24C /* YCTestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTestObj.m; sourceTree = "<group>"; };
 		30E3BA992350810400DFE205 /* AlgorithmAndStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmAndStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E3BA9C2350810400DFE205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9535B7FE23756C93006FDB54 /* YCQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCQueue.h; sourceTree = "<group>"; };
+		9535B7FF23756C93006FDB54 /* YCQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCQueue.m; sourceTree = "<group>"; };
 		954D0A2F23696C7600876EB8 /* YCSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSort.h; sourceTree = "<group>"; };
 		954D0A3023696C7600876EB8 /* YCSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCSort.m; sourceTree = "<group>"; };
 		9552CBE6237437BB00F57547 /* sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		30E3BA9B2350810400DFE205 /* AlgorithmAndStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9535B7FA23756B3C006FDB54 /* 队列 */,
 				954D0A2E23696C2300876EB8 /* 排序算法 */,
 				95917F0E2368221A006ABD7B /* 双向链表 */,
 				308D8F03235994F700A37C23 /* 单向链表 */,
@@ -128,6 +132,15 @@
 				3092BF0023586FA50034A24C /* YCTestObj.m */,
 			);
 			path = AlgorithmAndStructure;
+			sourceTree = "<group>";
+		};
+		9535B7FA23756B3C006FDB54 /* 队列 */ = {
+			isa = PBXGroup;
+			children = (
+				9535B7FE23756C93006FDB54 /* YCQueue.h */,
+				9535B7FF23756C93006FDB54 /* YCQueue.m */,
+			);
+			path = "队列";
 			sourceTree = "<group>";
 		};
 		954D0A2E23696C2300876EB8 /* 排序算法 */ = {
@@ -215,6 +228,7 @@
 				3092BF0123586FA50034A24C /* YCTestObj.m in Sources */,
 				308D8F062359951500A37C23 /* YCListNode.m in Sources */,
 				30E3BA9D2350810400DFE205 /* main.m in Sources */,
+				9535B80023756C93006FDB54 /* YCQueue.m in Sources */,
 				3092BEFE23585DA30034A24C /* YCArrayList.m in Sources */,
 				954D0A3123696C7600876EB8 /* YCSort.m in Sources */,
 			);
